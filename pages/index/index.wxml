@@ -1,0 +1,68 @@
+<template name="words-card">
+	<view class="wordcard">
+		<view>
+			<image src="{{word.coverPath}}" mode="widthFix"></image>
+		</view>
+		<view class="title">{{word.title}}({{word.subtitlle}})</view>
+	</view>
+</template>
+
+<view class="body">
+	<view class="head">
+		<view class="head-flex">
+			<image src="../../static/search.jpg"></image>
+			<textarea rows="1" cols="20" class="searchtext">搜索 关键字</textarea>
+		</view>
+		<view class="head-button">
+			<view class="myWordsStudyPath">Good Goood Study,Day Day Up</view>
+		</view>
+	</view>
+	<view class="list-wrap">
+		<scroll-view scroll-y="true" class="list">
+			<view class="channel_list">
+				<view class="channel">
+					<view>
+						<image src="../../static/wdkb.jpg" ></image>
+					</view>
+					<view class="title">我的课本</view>
+				</view>
+				<view class="channel">
+					<view>
+						<image src="../../static/zdnd.jpg" ></image>
+					</view>
+					<view class="title">重点难点</view>
+				</view>
+				<view class="channel">
+					<view>
+						<image src="../../static/zshz.jpg" ></image>
+					</view>
+					<view class="title">知识汇总</view>
+				</view>
+				<view class="channel">
+					<view>
+						<image src="../../static/kwdw.jpg" ></image>
+					</view>
+					<view class="title">课外读物</view>
+				</view>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="bottom">
+		<view class="guide-item active">
+			<image src="../../static/icon/index-active.png" mode="widthFix"></image>
+			<view>首页</view>
+		</view>
+		<view class="guide-item">
+			<image src="../../static/icon/sort.png" mode="widthFix"></image>
+			<view>课本</view>
+		</view>
+		<view class="guide-item" bindtap="onJumpWords">
+			<image src="../../static/icon/cal.png" mode="widthFix"></image>
+			<view>单词</view>
+		</view>
+		<view class="guide-item">
+			<image src="../../static/icon/head.png" mode="widthFix"></image>
+			<view>我的</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,54 @@
+<template name="words-card">
+	<view class="wordcard">
+		<view>
+			<image src="{{word.coverPath}}" mode="widthFix"></image>
+		</view>
+		<view class="title">{{word.title}}({{word.subtitlle}})</view>
+	</view>
+</template>
+
+<view class="body">
+	<view class="head">
+		<view class="head-flex">
+			<image src="../../static/search.jpg"></image>
+			<textarea rows="1" cols="20" class="searchtext">搜索 关键字</textarea>
+		</view>
+		<view class="head-button">
+			<view class="myWordsStudyPath">我的单词学习:</view>
+			<button bindtap="onWordsFin" size="mini">已会</button>
+			<button bindtap="onWordsUnFin" size="mini">多巩固</button>
+		</view>
+	</view>
+	<view class="list-wrap">
+		<scroll-view scroll-y="true" class="list">
+			<view wx:if="{{list.length>0}}" class="list-scroll-view">
+				<block wx:for="{{list}}" wx:key="{{i}}" wx:for-index="i" wx:for-item="word">
+					<template is="words-card" data="{{word}}" />
+				</block>
+			</view>
+			<view wx:if="{{listButton.length>0}}" class="list-scroll-view">
+				<block wx:for="{{listButton}}" wx:key="{{i}}" wx:for-index="i" wx:for-item="word">
+					<template is="words-card" data="{{word}}" />
+				</block>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="bottom">
+		<view class="guide-item" bindtap="onJumpHome">
+			<image src="../../static/icon/index.png" mode="widthFix"></image>
+			<view>首页</view>
+		</view>
+		<view class="guide-item">
+			<image src="../../static/icon/sort.png" mode="widthFix"></image>
+			<view>课本</view>
+		</view>
+		<view class="guide-item  active">
+			<image src="../../static/icon/cal-active.png" mode="widthFix"></image>
+			<view>课表</view>
+		</view>
+		<view class="guide-item">
+			<image src="../../static/icon/head.png" mode="widthFix"></image>
+			<view>我的</view>
+		</view>
+	</view>
+</view>

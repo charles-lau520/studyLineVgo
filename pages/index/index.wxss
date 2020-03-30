@@ -1,0 +1,100 @@
+.body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100vh;
+}
+.myWordsStudyPath{
+	font: 6px;
+	color: #EE9A00;
+}
+.head-flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.head-flex image{
+	width: 40px;
+	height: 40px;
+}
+.head-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+.searchtext{
+	width: 85%;
+	height: 40px;
+	background-color: #faf5f5;
+	font-size: 16px;
+	color: gainsboro;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.content{
+	padding: 5px;
+}
+/**
+ * 固定列表位置 star
+ */
+.list-wrap{
+	flex-grow: 1;
+	position: relative;
+}
+.list{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+/**
+ * end
+ */
+.channel_list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: stretch;
+	
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.channel{
+	text-align: center;
+	padding: 1px;
+}
+.channel image{
+	width: 150px;
+	height: 120px;
+}
+.channel .title{
+	font-size: 15px;
+}
+.bottom{
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.guide-item{
+	text-align: center;
+	font-size: 14px;
+	width: 40px;
+	line-height: 1;
+	padding: 20px;
+}
+.guide-item image{
+	width: 35px;
+}
+.active{
+	color: #23b8ff;
+}
+
+

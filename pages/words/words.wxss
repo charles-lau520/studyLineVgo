@@ -1,0 +1,106 @@
+.body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100vh;
+}
+.myWordsStudyPath{
+	font: 10px;
+	color: #EE9A00;
+}
+.head-flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+}
+.head-flex image{
+	width: 40px;
+	height: 40px;
+}
+.head-button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+.searchtext{
+	width: 85%;
+	height: 40px;
+	background-color: #faf5f5;
+	font-size: 16px;
+	color: gainsboro;
+	text-align: center;
+	vertical-align: middle;
+
+}
+
+.content{
+	padding: 5px;
+}
+
+/**
+ * 固定列表位置 star
+ */
+.list-wrap{
+	flex-grow: 1;
+	position: relative;
+}
+.list{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+/**
+ * end
+ */
+.list-scroll-view {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: space-between;
+	margin-left: 2px;
+	margin-right: 2px;
+	
+}
+.list .title{
+	text-align: center;
+	font-size: 20px;
+}
+.wordcard{
+	width: 47%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wordcard image{
+	width: 100%;
+	border-radius: 5px;
+}
+.title{
+	font-size: 20px;
+}
+	
+.bottom{
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.guide-item{
+	text-align: center;
+	font-size: 14px;
+	width: 40px;
+	line-height: 1;
+	padding: 20px;
+}
+.guide-item image{
+	width: 35px;
+}
+.active{
+	color: #23b8ff;
+}
+
+
