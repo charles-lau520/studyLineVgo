@@ -10,6 +10,9 @@ Page({
 		wx.navigateTo({
 			url:"/pages/words/words"
 		})
+    //wx.redirectTo({
+      //url: '/pages/words/words',
+    //})
 	}
 
 
